@@ -13,7 +13,7 @@ namespace ApiProdutosPessoas.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+    //[Authorize]
     public class DependenteController : ControllerBase
     {
         private readonly InterfaceDependente _dependenteRepositorio;

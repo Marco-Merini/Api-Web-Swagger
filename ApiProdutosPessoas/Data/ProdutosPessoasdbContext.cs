@@ -40,7 +40,7 @@ namespace ApiProdutosPessoas.Data
             modelBuilder.Entity<DependentesModel>()
                 .HasOne(d => d.Pessoa)
                 .WithMany(p => p.Dependentes)
-                .HasForeignKey(d => d.PessoaModelCodigo)
+                .HasForeignKey(d => d.IdResponsavel)
                 .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.ApplyConfiguration(new PessoaMap());
