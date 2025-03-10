@@ -20,7 +20,7 @@ namespace ApiProdutosPessoas.Repositories
 
         public async Task<DependentesModel> VincularDependente(DependentesModel dependente)
         {
-            var pessoaPrincipal = await _dbContext.Pessoas.FindAsync(dependente.PessoaModelCodigo);
+            var pessoaPrincipal = await _dbContext.Pessoas.FindAsync(dependente.IdResponsavel);
             if (pessoaPrincipal == null)
             {
                 throw new Exception("Pessoa principal não encontrada.");

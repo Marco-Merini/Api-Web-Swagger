@@ -8,7 +8,7 @@ namespace ApiProdutosPessoas.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+    //[Authorize]
     public class CidadeController : ControllerBase
     {
         private readonly InterfaceCidade _cidadeRepositorio;

@@ -14,7 +14,7 @@ namespace ApiProdutosPessoas.Models
         public int IdDependente { get; set; }
 
         [ForeignKey("PessoaModel")]
-        public int PessoaModelCodigo { get; set; }
+        public int IdResponsavel { get; set; }
         public PessoaModel Pessoa { get; set; }
     }
 }
